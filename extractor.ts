@@ -57,7 +57,7 @@ async function extractImagesFromPDF(pdfPath: string): Promise<void> {
             const tableEntry = table[imageCount];
 
             if (tableEntry) {
-              const imageName = `${tableEntry.number}.png`;
+              const imageName = `${tableEntry.number}.webp`;
 
               // Save the image
               fs.writeFileSync(path.join(imagesDir, imageName), imageBytes);
