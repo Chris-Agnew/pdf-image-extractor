@@ -4,6 +4,14 @@ This project extracts images from a PDF and names them according to a table in t
 
 ## Prerequisites
 
+```bash
+brew install pkg-config
+```
+
+```bash
+brew install pixman cairo pango libpng jpeg giflib librsvg
+```
+
 Node.js (>= 12.x)
 npm (>= 6.x)
 
@@ -23,7 +31,9 @@ npm (>= 6.x)
 2. **Place PDF file in root project directory**
 
 3. **Update PDF Path in extractor.ts**
-   const pdfPath = './your-pdf-file-name.pdf'; 4.**Run Script**
+   const pdfPath = './your-pdf-file-name.pdf'
+
+4.**Run Script**
 
 ```bash
 npx ts-node extractor.ts
